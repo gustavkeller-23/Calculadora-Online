@@ -1,0 +1,43 @@
+
+@import url('./variables.css');
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 14vh;
+
+    background-color: var(--Main-color);
+
+    font-family: "Lora", serif;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.title-color-main{
+    color: var(--Terciary-color);
+}
+
+.title-color-secundary{
+    color: #F3BD1C;
+}
+
+
+@media (min-width:601px){
+    .cabecalho{
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width:1201px){
+    .cabecalho{
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1441px){
+    .cabecalho{
+        font-size: 1.5em;
+    }
+}

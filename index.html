@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="shortcut icon" href="images/Icon_WEB.png">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <h1 class="title-color-main">Calculator<span class="title-color-secundary">Online</span></h1>
+    </header>
+
+    <main class="corpo">
+        <div class="calculadora">
+            <div id="Display" class="display">
+                <p id="Insert" class="insert">0</p>
+
+                <div class="symbols">
+                    <p id="plus">+</p>
+                    <p id="menos">-</p>
+                    <p id="multiply">x</p>
+                    <p id="divisor">%</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="line1 column1 botao" onclick="numero('7')">7</button>
+                <button class="line1 column2 botao" onclick="numero('8')">8</button>
+                <button class="line1 column3 botao" onclick="numero('9')">9</button>
+                <button class="line1 column4 botao" onclick="operador('/')">%</button>
+
+                <button class="line2 column1 botao" onclick="numero('4')">4</button>
+                <button class="line2 column2 botao" onclick="numero('5')">5</button>
+                <button class="line2 column3 botao" onclick="numero('6')">6</button>
+                <button class="line2 column4 botao" onclick="operador('*')">x</button>
+            
+                <button class="line3 column1 botao" onclick="numero('1')">1</button>
+                <button class="line3 column2 botao" onclick="numero('2')">2</button>
+                <button class="line3 column3 botao" onclick="numero('3')">3</button>
+                <button class="line3 column4 botao" onclick="operador('-')">-</button>
+            
+                <button class="line4 column1 botao" onclick="numero('0')">0</button>
+                <button class="line4 column2 botao" onclick="reset()">C</button>
+                <button class="line4 column3 botao" onclick="operador('=')">=</button>
+                <button class="line4 column4 botao" onclick="operador('+')">+</button>
+            </div>
+        </div>
+
+        <div class="label-results">
+            <p id="lastResults" class="results"> 0 </p>
+        </div>
+    </main>
+    
+    <footer class="rodapé">
+        <h3 class="creditos">Está calculadora foi criada por Gustav Keller</h3>
+        <div class="Logo do autor - Gustav Keller"></div>
+    </footer>
+
+    <script src="SCRIPTS/script.js"></script>
+
+</body>
+</html>
